@@ -1,4 +1,6 @@
 import { BrowserWindow, shell } from 'electron'
+import path from 'path';
+
 
 export default class Main {
   static mainWindow: Electron.BrowserWindow | null
@@ -20,6 +22,8 @@ export default class Main {
     const SLACK_APP_URL = 'https://app.slack.com/client'
   
     Main.mainWindow = new BrowserWindow({
+      frame: false,
+      icon: "/home/ubuntu/tooling/Slacky/images/icon.png",
       roundedCorners: true,
       width: 1920,
       height: 1080,

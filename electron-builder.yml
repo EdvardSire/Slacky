@@ -18,7 +18,7 @@ linux:
   category: Network
   synopsis: SlackArm
   target:
-    - target: rpm
+    - target: AppImage
       arch:
         - arm64
 flatpak:
